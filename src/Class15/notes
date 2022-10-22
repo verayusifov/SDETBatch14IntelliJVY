@@ -1,0 +1,55 @@
+Why should we exclude packages and classes from compiling:
+    In Intellij, if we have a syntax error in any of the files in a project, we can't run code for any other file
+    until we fix that error. Sometimes we want to execute code in some files without fixing those issues.
+    Therefore this is when we should use exclude
+
+How to Exclude Packages:
+Double-click the shift button and type excludes and hit enter. From the pop-up window click on the plus button
+and select the packages that you want to exclude.
+
+How is Java code compiled/executed on a computer:
+    We write the code in files with extension .java. Once we hit the run button (green arrow), the
+    software program called compiler checks this code for errors and converts it to byte code which
+    is usually stored in a folder called Out or bin. JVM another software further converts it to binary
+    code and this binary code is what is excluded on your computers.
+Why should we learn about methods:
+    Methods help us to reduce the amount of code that we have tow rite. For example, if a piece of code is
+    being repeated, we can create a method for it and simply call that method whenever we need that logic
+    again.
+Syntax of creating a method:
+    we can create methods only inside of a class
+    [datatype][method name] [(datatype variableName)][method body]
+    [datatype] can be void boolean, String, Int, etc.
+    [method name] They are like variable names.
+    [(datatype variableName)] used to pass data while calling a method
+How do we decide that we should use void or a method with a return keyword1:
+If we are building a method that will be used by others or inother parts of your code which require
+some data from your method like an if condition we should not create methods with void type
+String str="hello"
+int length-str.length();
+if(!str.isEmpty()&&length%2!=0&&length>3)
+
+
+
+
+Types of variables with respect to their scope:
+There are 3 types of variables w.r.t their scope.
+1. Local Variables
+2. Instance variables
+3. Static variables
+
+Local variables:
+    Variables that are created inside a method loop switch case or any block of code. When do we use local
+    variables? Local variablesoccupy less memory for the shortest amount of time. We should always go with
+    locl variable whenever possible. But they are lmited in scope, we can't use local variables
+    outside block of code in which they are already declared
+        for(int i=0;i<5,i++){
+        System.out.println(i);
+        }
+Instance Variables:
+    Are declared outside of block of code but inside a class. We should use them when we are planning to
+    create multiple objects of a class, or if we want to share somethng in multiple methods
+    They occupy the memory fo longer, comparing to local variables.
+Static Variables;
+    If an instance variable has a keyword static with it, it is called a static variable. We use them when
+    we need to share something accross the objects. They occupy memory for longest time.
